@@ -5,6 +5,25 @@ Children:
   Id: g=a1c18f9088ad746c5cd9fe8fb0edafc9
   Supertype: Screen
   ReferenceType: HasComponent
+  Children:
+  - Name: Label1
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Alessio"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 75.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
 - Name: Screen2
   Id: g=8b9b96b1a51c117afe07f88ed3a1b2e1
   Supertype: Screen
