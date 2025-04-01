@@ -9,13 +9,18 @@ Children:
     DataType: LocaleId
     ValueRank: OneDimension
     ArrayDimensions: [0]
-    Value: ["en-US"]
+    Value: ["en-US","it-IT","ru-RU","zh-CN"]
   - Name: LocaleFallbackList
     Type: BaseDataVariableType
     DataType: LocaleId
     ValueRank: OneDimension
     ArrayDimensions: [0]
     Value: ["en-US"]
+  - Name: MeasurementSystemMap
+    Type: BaseDataVariableType
+    DataType: MeasurementSystemMapItem
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
 - Name: Authentication
   Type: PropertyGroup
   Children:
@@ -28,6 +33,9 @@ Children:
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
+  - Name: AuthenticationMode
+    Type: BaseDataVariableType
+    DataType: AuthenticationMode
 - Name: PasswordPolicy
   Type: PasswordPolicy
   Children:
@@ -63,3 +71,12 @@ Children:
 - File: System/System.yaml
 - File: Translations/Translations.yaml
 - File: Retentivity/Retentivity.yaml
+- Name: RecipeSchema1
+  Type: Alias
+  DataType: NodeId
+  Value: "/Objects/CorsoFTOptixVR_01_04_2025/Recipes/RecipeSchema1/EditModel"
+  Children:
+  - Name: Kind
+    Type: PropertyType
+    DataType: NodeId
+    Value: "/Objects/CorsoFTOptixVR_01_04_2025/Recipes/RecipeSchema1/EditModel"

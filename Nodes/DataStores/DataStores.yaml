@@ -1,2 +1,258 @@
 Name: DataStores
 Type: DataStoresCategoryFolder
+Children:
+- Name: EmbeddedDatabase1
+  Id: g=0e234d7e01204eeb0e4888f649fa6611
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: DataLogger1
+      Id: g=804ec1517d4626d158c55b96206e958c
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Sine
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Cosine
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Ramp
+          Type: StoreColumn
+          DataType: Int32
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 10000
+    - Name: RecipeSchema1
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Name
+          Type: StoreColumn
+          DataType: String
+        - Name: /Variable1
+          Type: StoreColumn
+          DataType: Int32
+        - Name: /Variable2
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: /Variable3
+          Type: StoreColumn
+          DataType: String
+  - Class: Reference
+    Target: ns=18;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=18;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=13;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=59
+    Direction: Forward
+  - Name: Filename
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "DB_Progetto"
+- Name: ODBCDatabase1
+  Id: g=79658b5d87f5ab5b42d621d57ba795cb
+  Type: ODBCStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: tabella1
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Var1
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Var2
+          Type: StoreColumn
+          DataType: String
+  - Name: Type
+    Type: PropertyType
+    DataType: DBMSType
+    Value: 3
+  - Name: Username
+    Type: PropertyType
+    DataType: String
+    Value: "root"
+  - Name: Password
+    Type: PropertyType
+    DataType: Password
+    Value: "Ale15682"
+  - Name: SFEnabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: SFBufferMaxSize
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1000
+  - Name: SFBufferUsage
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: SFBufferOverflow
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=13;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=59
+    Direction: Forward
+  - Name: Server
+    Type: PropertyType
+    DataType: String
+    Value: "127.0.0.1"
+  - Name: Database
+    Type: PropertyType
+    DataType: String
+    Value: "corso_vr"

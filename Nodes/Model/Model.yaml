@@ -1,2 +1,51 @@
 Name: Model
+Id: g=1f4600618c9ab557cbf3486a0116cb1e
 Type: ModelCategoryFolder
+Children:
+- Name: Variable1
+  Id: g=668488c8b6c616a7da514e78c95ed28c
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Variable2
+  Id: g=a6f467a0f334523812da0441f3d4090f
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Variable3
+  Id: g=3ed859316083fb702551c0b2627b9575
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: Temperatura
+  Id: g=ee0b2a1253d6248d18f97e91b28897ca
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: Lunghezza
+  Id: g=eedc46fdb32a62e79f991eaa506bfc39
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: Variable4
+  Id: g=ba8ebf27bd7f36ca2139ae2049ffa672
+  Type: BaseDataVariableType
+  DataType: Boolean
+  ValueRank: OneDimension
+  ArrayDimensions: [5]
+- Name: MyVar
+  Id: g=7bd60cf94fba4c6493d04cf301e36d77
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=5e87844391ef4539886fde4f1ae77653
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../Temperatura"
+    Children:
+    - Name: Mode
+      Id: g=24e497c3eac34903b9ea1e440b6ece5a
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: ColoreLed
+  Id: g=1cc8c27575bfd25bb14c7ecace0b35fe
+  Type: BaseDataVariableType
+  DataType: Int32
